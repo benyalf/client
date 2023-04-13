@@ -1,0 +1,27 @@
+:root {
+  --green: #4ecdc4;
+  --darkGrey: #292f36;
+  --white: #fffffa;
+  --black: #000103;
+  --orange: #fa8334;
+  --red: #ff312e;
+}
+
+html {
+  box-sizing: border-box;
+  font-family:monospace;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+background-color: #000103;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

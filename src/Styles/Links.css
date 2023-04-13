@@ -1,0 +1,93 @@
+.social-links {
+    grid-area: social;
+    align-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 115px));
+    justify-items: center;
+    grid-gap: 20px;
+    font-family: monospace;
+    font-size:16px;
+    margin-top: 10px;
+  }
+  
+  
+  .animation-text {
+    display: block;
+    white-space: nowrap;   
+    width: 14ch;
+    animation: typing 2s steps(16) blink .5s infinite step-end alternate;
+    overflow: hidden;
+    }
+    
+    @keyFrames typing {
+    from { width: 0}
+    }
+    
+    @keyFrames blink {
+     50% { border-color: transparent}
+    }
+
+
+  .social-link {
+    color: var(--white);
+    grid-column: minmax(50px, 1fr);
+    font-weight: 500;
+    display: grid;
+    grid-gap: 3px;
+    justify-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+  }
+  
+  .social-link:hover {
+    filter: brightness(85%);
+    text-decoration: underline;
+  }
+  
+  .social-logo {
+    width: 50px;
+  }
+  
+
+  
+@media (max-width: 700px) {
+    .social-links {
+      width: 512px;
+      margin-top: 20px;
+      grid-gap: 10px;
+    }
+  }
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  /* Estilos aquí */
+  .social-links{
+    grid-template-columns: repeat(auto-fit, minmax(50px, 150px));
+    grid-template-rows: 2fr;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Estilos aquí */
+  .social-logo{
+    width: 25px;
+  }
+  .social-links{
+    grid-template-columns: repeat(auto-fit, minmax(50px, 115px));
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  /* Estilos aquí */
+  .social-logo{
+    width: 40px;
+    
+  
+  }
+  .social-links{
+    grid-template-columns: repeat(auto-fit, minmax(50px, 115px));
+  }
+}

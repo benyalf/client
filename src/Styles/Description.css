@@ -1,0 +1,42 @@
+.description {
+  overflow: hidden;
+  grid-area: description;
+  display: grid;
+  font-size:20px;
+  font-family: monospace;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 700px;
+  grid-template-columns: 1fr;
+}
+
+.description-text {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  font-size:19px;
+  font-family: monospace;
+  
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  /* Estilos aquí */
+  .description-text {
+    width: 500px;
+    font-weight: 700;
+    font-size:16px;
+
+  }
+  
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Estilos aquí */
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+
+  /* Estilos aquí */
+}
